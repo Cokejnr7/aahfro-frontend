@@ -1,0 +1,32 @@
+
+
+footer{
+    bottom: 0px;
+    background-color: $footer-background;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 0px;
+
+    .fa{
+        font-size: 48px;
+        color: $icon-color;
+    }
+    .icon-list{
+        display: flex;
+        gap: 51px;
+    }
+    
+    .footer-links{
+        color: $p-light-color;
+        display: flex;
+        gap: 66px;
+    }
+    .footer-link{
+        font-family: Inter;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

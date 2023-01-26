@@ -1,0 +1,22 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $nav-color;
+    padding: 9px 0px;
+    // padding: ;
+
+    &-links{
+        display: flex;
+        gap: 66px;
+        color: $nav-color;
+
+        li{
+            font-family: Inter;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+

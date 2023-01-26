@@ -1,0 +1,13 @@
+
+%btn{
+    border-radius: 8.05008px;
+    border: none;
+}
+
+.tag{
+    @extend %btn;
+    background-color: $tag-background;
+    padding: 6.03756px 10.0626px;
+    color: $black;
+    font-family: HelveticaNue;
+}
