@@ -5,6 +5,8 @@
 @import './utility';
 @import './post';
 @import './button';
+@import './post-create';
+@import './post-main';
 
 
 *,*::after,*::before{
@@ -19,4 +21,13 @@ li{
 
 p{
     font-family: Inter;
+}
+html{
+    height: 100%;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

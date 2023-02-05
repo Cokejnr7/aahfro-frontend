@@ -2,4 +2,17 @@
 
 .container{
     padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+
+.visible{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+

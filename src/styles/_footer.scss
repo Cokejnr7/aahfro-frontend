@@ -1,7 +1,6 @@
 
 
 footer{
-    bottom: 0px;
     background-color: $footer-background;
     width: 100%;
     display: flex;
@@ -9,6 +8,7 @@ footer{
     align-items: center;
     gap: 70px;
     padding: 90px 0px;
+    margin-top: auto;
 
     .fa{
         font-size: 48px;

@@ -1,0 +1,98 @@
+
+@mixin iconMixin{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: .5px;
+    background-color: $black;
+    left: 50%;
+    top: 50%;
+}
+
+@mixin addMixin{
+    width: 25px;
+    height: 25px;
+    border: .5px solid $black;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: all 2s linear;
+}
+
+
+
+.post-create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+    .image-placeholder{
+        background-color: $placeholder-color;
+        width: 1102px;
+        height: 623px;
+        border-radius: 38px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i{
+            font-size: 80px;
+        }
+    }
+
+    .main-image{
+        width: 1102px;
+        height: 623px;
+        object-fit: cover;
+    }
+    .add-more{
+       @include addMixin();
+
+        &::before{
+            @include iconMixin();
+            
+            transform: translateX(-50%);
+        }
+
+        &::after{
+            @include iconMixin();
+            transform: translateX(-50%) rotate(90deg);
+        }
+
+    }
+        .add-more-rotate{
+            @include addMixin();
+            
+            &::before{
+                @include iconMixin();
+                transform: translateX(-50%) rotate(45deg);
+
+            }
+
+            &::after{
+                @include iconMixin();
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
+
+        input[type="text"]{
+            font-size: 18px;
+            line-height: 1.58;
+            letter-spacing: -.004em;
+            border: none;
+            font-family: HelveticaNue;
+            outline: none;
+            font-weight: 400;
+
+            &::placeholder{
+                color: $placeholder-text;
+            }
+        }
+
+    }
+
+
+
+

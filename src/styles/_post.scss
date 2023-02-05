@@ -2,11 +2,14 @@
 .post{
     display: flex;
     flex-direction: column;
+    max-width: 300px;
     gap: 16px;
 
     .tag-container{
         display: flex;
-        gap: 21px;
+        flex-wrap: wrap;
+        column-gap: 21px;
+        row-gap: 10px;
     }
     img{
         max-width: 307px;
@@ -24,6 +27,11 @@
     }
     &-footer{
         padding-top: 12px;
+
+        small{
+            font-size: 12px;
+            font-weight: 300;
+        }
         
     }
     &-footer::before{

@@ -1,0 +1,52 @@
+.post-detail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-main {
+    img {
+        width: 1102px;
+        height: 623px;
+        object-fit: cover;
+    }
+
+    #{&}-detail {
+        padding: 40px 114px;
+        display: flex;
+        gap: 113px;
+
+        h2 {
+            max-width: 400px;
+            font-family: LandasansMedium;
+            font-weight: 500;
+            font-size: 96px;
+            line-height: 82.31px;
+
+        }
+        h4{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.post-detail-date,.post-detail-contributors{
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.post-date-contributors{
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
